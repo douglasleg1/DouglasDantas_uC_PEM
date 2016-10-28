@@ -1,0 +1,26 @@
+|Somador_Completo
+S <= Meio_Somador:inst.Somador
+CarryIN => Meio_Somador:inst.Entrada1
+X => Meio_Somador:inst2.Entrada1
+Y => Meio_Somador:inst2.Entrada2
+CarryOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo|Meio_Somador:inst
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo|Meio_Somador:inst2
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+

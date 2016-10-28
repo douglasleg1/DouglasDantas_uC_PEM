@@ -1,0 +1,112 @@
+|Somador_4_Bits
+S0 <= Somador_Completo:inst3.S
+S1 <= Somador_Completo:inst1.S
+S2 <= Somador_Completo:inst2.S
+S3 <= Somador_Completo:inst.S
+CarryOut <= Somador_Completo:inst.CarryOUT
+
+
+|Somador_4_Bits|Somador_Completo:inst3
+S <= Meio_Somador:inst.Somador
+CarryIN => Meio_Somador:inst.Entrada1
+X => Meio_Somador:inst2.Entrada1
+Y => Meio_Somador:inst2.Entrada2
+CarryOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst3|Meio_Somador:inst
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst3|Meio_Somador:inst2
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst1
+S <= Meio_Somador:inst.Somador
+CarryIN => Meio_Somador:inst.Entrada1
+X => Meio_Somador:inst2.Entrada1
+Y => Meio_Somador:inst2.Entrada2
+CarryOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst1|Meio_Somador:inst
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst1|Meio_Somador:inst2
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst2
+S <= Meio_Somador:inst.Somador
+CarryIN => Meio_Somador:inst.Entrada1
+X => Meio_Somador:inst2.Entrada1
+Y => Meio_Somador:inst2.Entrada2
+CarryOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst2|Meio_Somador:inst
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst2|Meio_Somador:inst2
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst
+S <= Meio_Somador:inst.Somador
+CarryIN => Meio_Somador:inst.Entrada1
+X => Meio_Somador:inst2.Entrada1
+Y => Meio_Somador:inst2.Entrada2
+CarryOUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst|Meio_Somador:inst
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_4_Bits|Somador_Completo:inst|Meio_Somador:inst2
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
