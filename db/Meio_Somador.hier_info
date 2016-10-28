@@ -1,0 +1,9 @@
+|Meio_Somador
+CarryOUT <= PortaAND.DB_MAX_OUTPUT_PORT_TYPE
+Entrada1 => PortaAND.IN0
+Entrada1 => PortaXOR.IN0
+Entrada2 => PortaAND.IN1
+Entrada2 => PortaXOR.IN1
+Somador <= PortaXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Otacílio/Documents/PEM/Meio_Somador.bdf
+source_file = 1, C:/Users/Otacílio/Documents/PEM/tb_Meio_Somador.vwf
+source_file = 1, C:/Users/Otacílio/Documents/PEM/db/Meio_Somador.cbx.xml
+design_name = Meio_Somador
+instance = comp, \CarryOUT~output , CarryOUT~output, Meio_Somador, 1
+instance = comp, \Somador~output , Somador~output, Meio_Somador, 1
+instance = comp, \Entrada1~input , Entrada1~input, Meio_Somador, 1
+instance = comp, \Entrada2~input , Entrada2~input, Meio_Somador, 1

@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "CarryOUT",
+					"strict" : false
+				},
+				{
+					"name" : "Somador",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada1",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
